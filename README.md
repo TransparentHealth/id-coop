@@ -4,18 +4,30 @@ A public description of the "Identity Cooperative" concept. Feedback encouraged!
 
 
 
-Why Does This Exist?
--------------------
+Why the ID CoOp was Created
+---------------------------
 
 
 The "ID CoOp" was created to facilitate online access to people's own sensitive information such as healthcare and financial information. By providing a higher-level of "you are who you say you are", other systems who hold sensitive information (i.e. resource providers) can rely on the ID CoOp to assert a higher level of assurance of a person's identity.
 
-The "ID CoOp" informs other application about how sure we are that, you are who you say you are.  "How sure ID Cop is, that you are who you say you are" is categorized as a "identity assurance level" of a `1`, `2`, or `3`).  These levels (`1`,`2`,`3`) are based on NIST Digital Identity Guidelines SP 800-63-3. These claims are passed in a digitally signed electronic credential known as an ID token (`id_token`). The ID CoOp is standards-based and is built upon OpenID Connect and OAuth2. 
+When a person logs in or connects an application "ID CoOp", the application is informed about you and your identity assurance level.  How sure ID CoOp is, that "you are who you say you are" is categorized as a "identity assurance level" of either a `1`, `2`, or `3`).  These levels (`1`,`2`,`3`) are based on [NIST Digital Identity Guidelines SP 800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html). Wen a person logs in or connects to the ID CoOp from another application, these "claims" (including name, etc.) are passed to applicationsin in a digitally signed electronic credential known as an ID token (`id_token`).  See  this [faq](https://openid.net/connect/faq/) form more info
 
 High Level Concept of Operations
 --------------------------------
 
 The "ID CoOp" will provide a single sign-on service similar to Google OpenID Connect. ID CoOp shall provide an electronic credential bearing an identity assurance claim. Third party applications will function as "relying parties" and rely on the identity electronic credential.  Users who have been given the "ID referee badge" may verify the Identity of other users.  Users can be "agents" of Organizations. This models employer to employee (or contractor, etc.) relationships. These relationships are included in the user's electronic credential (`id_token`).
+
+
+Raising a User's Identity Assurance Level (and claim)
+-----------------------------------------------------
+
+
+The `ial` claim can be changed from the default of `1` (untrusted) to `2` by adding documentation of an identity proofing event.  This can happen in multiple ways.
+
+
+* Users in the "Tusted Referee" permission group can raise or lower other user's identity asurtance level. Adherence to our code of coduct is required. 
+* Trusted applications can raise or lower other user's identity asurtance level via a RESTFul API.
+
 
 Current Features in the ID CoOp
 -------------------------------
@@ -71,4 +83,4 @@ Rules for 3rd Party Applications (a.k.a. Relying Parties)
 * Your app must not grant access to one's own health information unless and IAL of `2` is established.
 * You application must use https in production when calling any of our APIs.
 * Your callback `redirect_uris` may not use `http` in production. `https` in production.
-* For production access your application must be vetted.  We will give you a signed JWT (i.e JWS) as a badge that your application is approved.  This is also your application's ticket to dynamic client registration.
+* For production access your application must be vetted.  We will give you a signed JWT (i.e JWS) as a badge that your application is approved.  This is also your application's "ticket" to dynamic client registration. Pass it in the header with your request when using the DynReg endpoint.
