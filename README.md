@@ -8,7 +8,7 @@ Why Does This Exist?
 -------------------
 
 
-The "ID CoOp" was created to facilitate access to people's online access to sensitive information such as healthcare and financial information. By providing a higher-level of "you are who you say you are", other systems who hold sensitive information (i.e. resource providers) can rely on the ID CoOp to assert assurance of an person's identity.
+The "ID CoOp" was created to facilitate online access to people's own sensitive information such as healthcare and financial information. By providing a higher-level of "you are who you say you are", other systems who hold sensitive information (i.e. resource providers) can rely on the ID CoOp to assert assurance of an person's identity.
 
 The "ID CoOp" informs other application about how sure we are that, you are who you say you are.  "How sure ID Cop is, that you are who you say you are" is categorized as a "identity assurance level" of a `1`, `2`, or `3`).  These levels (`1`,`2`,`3`) are based on NIST Digital Identity Guidelines SP 800-63-3. These claims are passed in a digitally signed electronic credential known as an ID token (`id_token`). The ID CoOp is standards-based and is built upon OpenID Connect and OAuth2. 
 
