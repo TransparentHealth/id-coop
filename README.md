@@ -38,7 +38,7 @@ Raising a User's Identity Assurance Level (and claim)
 The `ial` claim can be changed from the default of `1` (untrusted) to `2` by adding documentation of an identity proofing event.  This can happen in multiple ways.
 
 
-* Users in the "Tusted Referee" permission group can raise or lower other user's identity asurtance level. Adherence to our code of coduct is required. 
+* Users in the "Trusted Referee" permission group can raise or lower other user's identity assurance level. Adherence to our code of conduct is required. 
 * Trusted applications can raise or lower other user's identity asurtance level via a RESTFul API.
 
 
@@ -46,7 +46,7 @@ Current Features in the ID CoOp
 -------------------------------
 
 
-The ID CoOP is based on open source open id connect provider "Verify My Identity" https://github.com/TransparentHealth/vmi.  Here is a partial list of some key features already available.
+The ID CoOP is based on open source open id connect provider "Verify My Identity" https://TransparentHealth/vmi.  Here is a partial list of some key features already available.
 
 
 * Open ID Connect Core
@@ -68,7 +68,7 @@ Blue Sky Feature Wishlist
 -------------------------
 
 
-The ID CoOP is based on open source open id connect provider "Verify My Identity" https://github.com/TransparentHealth/vmi.
+The ID CoOP is based on open source open id connect provider "Verify My Identity" https://TransparentHealth/vmi.
 
 (Yes you or your organization can commission the Transparent Health foundation to implement items on this list. )
 
