@@ -10,7 +10,20 @@ Why the ID CoOp was Created
 
 The "ID CoOp" was created to facilitate online access to people's own sensitive information such as healthcare and financial information. By providing a higher-level of "you are who you say you are", other systems who hold sensitive information (i.e. resource providers) can rely on the ID CoOp to assert a higher level of assurance of a person's identity.
 
-When a person logs in or connects an application "ID CoOp", the application is informed about you and your identity assurance level.  How sure ID CoOp is, that "you are who you say you are" is categorized as a "identity assurance level" of either a `1`, `2`, or `3`).  These levels (`1`,`2`,`3`) are based on [NIST Digital Identity Guidelines SP 800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html). Wen a person logs in or connects to the ID CoOp from another application, these "claims" (including name, etc.) are passed to applicationsin in a digitally signed electronic credential known as an ID token (`id_token`).  See  this [faq](https://openid.net/connect/faq/) form more info
+When a person logs in or connects an application "ID CoOp", the application is informed about you and your identity assurance level.  How sure ID CoOp is, that "you are who you say you are" is categorized as a "identity assurance level" of either a `1`, `2`, or `3`).  These levels (`1`,`2`,`3`) are based on [NIST Digital Identity Guidelines SP 800-63-3](https://pages.nist.gov/800-63-3/sp800-63-3.html). When a person logs in or connects to the ID CoOp from another application, these "claims" (including name, etc.) are passed to the application in in a digitally signed electronic credential known as an ID token (`id_token`).  See  this [faq](https://openid.net/connect/faq/) form more information on how it works.
+
+How does the ID CoOp Operate?
+-----------------------------
+
+* The CoOp is collectivly funded by organizations who collectivly rely on its information. The "Relying Parties" fund the CoOp and typically have one or more applications connected to the CoCp.  Organizations my use the ID CoOp as a single sign-on for the agents (e.g. employees or contractors), for their Member base, or both. 
+* Organizations agree to accept\rely on the identity assurance claims `ial` established by others outside their organization.
+* Organizations that function as relying parties may include; health care organizations, financial institutions, insurance companies, state governments, federal agencies, or community-based organizations.  
+* An Organization's membership in the CoOp is currently restricted to organizations based in the United States, but an international version may be established in the future.
+* The CoOp is an open source project. Its code base is managed by TransparentHealth, a non-profit open source software foundation.
+
+
+
+
 
 High Level Concept of Operations
 --------------------------------
@@ -33,7 +46,7 @@ Current Features in the ID CoOp
 -------------------------------
 
 
-The ID CoOP is based on open source open id connect provider "Verify My Identity" https://TransparentHealth/vmi.  Here is a partial list of some key features already available.
+The ID CoOP is based on open source open id connect provider "Verify My Identity" https://github.com/TransparentHealth/vmi.  Here is a partial list of some key features already available.
 
 
 * Open ID Connect Core
@@ -55,7 +68,7 @@ Blue Sky Feature Wishlist
 -------------------------
 
 
-The ID CoOP is based on open source open id connect provider "Verify My Identity" https://TransparentHealth/vmi.
+The ID CoOP is based on open source open id connect provider "Verify My Identity" https://github.com/TransparentHealth/vmi.
 
 (Yes you or your organization can commission the Transparent Health foundation to implement items on this list. )
 
@@ -71,7 +84,7 @@ These next 3 are related....
 
 * Document Signing and Publication interface. Consent Receipt Specification: https://kantarainitiative.org/confluence/display/infosharing/Consent+Receipt+Specification 
 * Digital wallet public/private keypair for document signing and signature. A Mnemonic (list of words) will allow for a private key’s recovery.
-* DNS for publication of public keys and signatures. DNS will provide both provenance and a distributed architecture. DNS is used of a blockchain. 
+* DNS for publication of public keys and signatures. DNS will provide both provenance and a distributed architecture (characteristics of a blockchain without a blockchain). 
 
 
 
