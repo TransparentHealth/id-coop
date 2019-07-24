@@ -75,7 +75,7 @@ The ID CoOP is based on open source open id connect provider "Verify My Identity
 
 * Remote ID proofing user interface
 * OAuth 2.0 for Native Mobile Applications: https://tools.ietf.org/html/rfc8252 (Already done in BB 2.0 API. just move it over.)
-* DOAuth 2.0 Dynamic Client Registration Protocol: https://tools.ietf.org/html/rfc7591)
+* OAuth 2.0 Dynamic Client Registration Protocol: https://tools.ietf.org/html/rfc7591)
 * Application Proofing\Signing User Interface with tie to Dynamic Client Registration 
 * Support for Google Authenticator as a form of 2nd factor authentication.
 * Support for push notifications as a form of 2nd factor authentication. (preferred over SMS).
